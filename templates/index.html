@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>医疗数据分析系统</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🏥 医疗数据分析系统</h1>
+        </header>
+        <main>
+            <section id="data-upload">
+                <h2>📊 数据上传</h2>
+                <input type="file" id="file-upload" accept=".csv, .json">
+                <button id="upload-button">上传数据</button>
+            </section>
+            <section id="data-overview">
+                <h2>📈 数据概览</h2>
+                <div id="overview-content"></div>
+            </section>
+            <section id="analysis-results">
+                <h2>🔍 分析结果</h2>
+                <div id="results-content"></div>
+            </section>
+            <section id="visualizations">
+                <h2>📊 数据可视化</h2>
+                <div id="visualization-content"></div>
+            </section>
+            <section id="chat-interface">
+                <h2>💬 智能问答</h2>
+                <input type="text" id="chat-input" placeholder="请输入您的问题">
+                <button id="send-button">发送</button>
+                <div id="chat-history"></div>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
